@@ -1,0 +1,157 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f2f2f2;
+}
+
+.container {
+  width: 80%;
+  margin: 0 auto;
+}
+
+.container::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+header {
+  background-color: #333;
+  color: #fff;
+  padding: 20px 0;
+}
+
+.logo img {
+  width: 100px;
+}
+
+.products {
+  margin-top: 20px;
+}
+
+.product {
+  width: 20%;
+  float: left;
+  padding: 5px;
+}
+
+.product img {
+  max-width: 200px;
+  max-height: 200px;
+  height: auto;
+}
+
+.product h3 {
+  margin-top: 10px;
+}
+
+@media (max-width: 768px) {
+  .product {
+    width: 50%;
+  }
+}
+
+@media (max-width: 480px) {
+  .product {
+    width: 100%;
+  }
+}
+
+.product-title {
+  color: black;
+  text-decoration: none;
+  margin: 0;
+  padding: 0;
+}
+
+/* Modal styles */
+.modal {
+  display: block; /* Show the modal */
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0, 0, 0, 0.4); /* Black with opacity */
+}
+
+/* Modal content */
+.modal-content {
+  background-color: #fefefe;
+  margin: 15% auto;
+  padding: 20px;
+  border-radius: 10px;
+  width: 80%;
+  text-align: center;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+
+/* Yes and No buttons */
+.modal-content button {
+  display: inline-block;
+  margin: 10px;
+  padding: 10px 20px;
+  cursor: pointer;
+  border: none;
+  border-radius: 5px;
+  background-color: #4CAF50; /* Green */
+  color: white;
+  text-align: center;
+  text-decoration: none;
+  font-size: 16px;
+  transition-duration: 0.4s;
+}
+
+.modal-content button:hover {
+  background-color: #45a049; /* Darker green */
+}
+
+/* Form container */
+.form-container {
+  margin: 50px auto;
+  width: 50%;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  background-color: #f9f9f9;
+}
+
+/* File input */
+.file-input {
+  margin-bottom: 20px;
+}
+
+/* Submit button */
+.submit-btn {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  background-color: #4caf50;
+  color: white;
+  cursor: pointer;
+}
+
+/* Success message */
+.success-msg {
+  color: #4caf50;
+  font-weight: bold;
+}
+
+/* Error message */
+.error-msg {
+  color: #f44336;
+  font-weight: bold;
+}
+
+@media screen and (max-width: 600px) {
+  .form-popup {
+    width: 80%;
+  }
+}
